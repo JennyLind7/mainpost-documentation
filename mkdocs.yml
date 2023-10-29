@@ -1,0 +1,75 @@
+site_name: Project documentation
+
+theme:
+  name: material
+  logo: assets/mainpost_logo.png
+  favicon: assets/mainpost.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: grey
+      accent: lime
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: grey
+      accent: purple
+
+
+nav:
+  - Getting started: setup.md
+  - Architecture: 
+    - Overview: architecture/overview.md
+    - Database: architecture/database.md 
+    - Authentication Service: architecture/authentification.md 
+    - Frontend: architecture/frontend.md
+    - Backend: architecture/backend.md
+    - Dockerized Services: architecture/dockerizedArchitecture.md
+  - Data Overview: 
+    - Internal data: data/overview_data.md
+    - Database model: data/databaseModel.md
+  - Services:
+    - Services Web Application: externalServices/servicesWebApp.md
+    - Services Modelling: externalServices/optuna.md
+  - Web Application: 
+    - Dashboard: frontend/dashboard.md
+    - Liefergebiete: frontend/liefergebiete.md
+    - Mitarbeiter: mitarbeiter.md
+    - Abwesenheitserfassung: frontend/abwesenheit.md
+    - Historisches: frontend/historisches.md
+    - Predictions: frontend/prediction.md
+  - Backend: 
+    - Prediction: backend/backend.md
+  - Models: index.md
+  - Team: index.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+
+extra_javascript:
+  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+  - "https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+
+
+copyright: |
+  &copy; 2023 Simon Unterlugauer, Dominik Petermann, Jakob Weigand, Jenny Lindner
+

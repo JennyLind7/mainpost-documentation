@@ -1,0 +1,1 @@
+<img src="/assets/application_non_transparent.png" alt="Architecture" style="max-width:100%;">
